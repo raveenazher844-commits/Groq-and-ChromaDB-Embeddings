@@ -1,0 +1,16 @@
+
+Groq and ChromaDB Embeddings Assignment
+
+Groq is an AI inference platform that provides access to large language models through an API.
+
+A large language model, also called an LLM, can understand and generate human language. It can answer questions, summarize text, and assist with different tasks.
+
+ChromaDB is a vector database. It stores text documents and their vector embeddings. These embeddings help the application find information based on meaning rather than only exact keyword matches.
+
+An embedding is a numerical representation of text. Similar meanings can be represented by vectors that are close to one another in embedding space.
+
+Retrieval Augmented Generation, also called RAG, combines information retrieval with a language model. First, the application searches a knowledge base. Next, it sends the relevant information and the user's question to an LLM. Finally, the LLM generates an answer based on the retrieved context.
+
+Text chunking means dividing a long document into smaller pieces. Smaller chunks can help a retrieval system find relevant information more precisely.
+
+The main workflow of this project is to load a text file, split it into chunks, generate embeddings, store the chunks in ChromaDB, retrieve relevant documents, and use Groq to generate an answer.
